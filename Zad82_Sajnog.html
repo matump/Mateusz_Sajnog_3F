@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script language="JavaScript">
+        function pushbutton() {
+            alert("Cześć");
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <br />
+        Ostatnio zmodyfikowany
+        <script language="LiveScript">
+            document.write(document.lastModified, "<br>")
+        </script>
+        <button class="button" type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">Naciśnij mnie</button>
+        <script language="JavaScript">
+            dzis = new Date()
+            document.write("<br>Aktualny czas : ", dzis.getHours(), ":", dzis.getMinutes());
+            document.write("<br>Aktualna data : ", dzis.getDate(), ".", dzis.getMonth() + 1, ".", dzis.getFullYear());
+        </script>
+    </center>
+</body>
+</html>

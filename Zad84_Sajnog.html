@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script language="JavaScript">
+        function sajnog_start() {
+            start_saj = new Date();
+            poczatek_saj = start_saj.getTime();
+        }
+        function sajnog_stop() {
+            stop_saj = new Date();
+            koniec_saj = stop_saj.getTime();
+            roznica_saj = koniec_saj - poczatek_saj;
+            pokaz1.innerHTML = roznica_saj / 1000 + " s";
+        }
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script language="JavaScript">
+        dzis_saj = new Date();
+        document.write("<br>Aktualny czas : ", dzis_saj.getHours(), ":", dzis_saj.getMinutes(), "<br>");
+    </script>
+    <input type="button" name="Button1" value="START" onclick="sajnog_start()">
+    <input type="button" name="Button2" value="STOP" onclick="sajnog_stop()">
+    <center>
+        <table border="2">
+            <tr id="pokaz1"></tr>
+        </table>
+    </center>
+</body>
+</html>
